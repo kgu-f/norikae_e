@@ -4,20 +4,26 @@
 <meta charset="UTF-8">
 <title>Norikae English</title>
 <style>
-  body { margin: 0; }
+  body {
+    margin: 0;
+  }
   .container {
     display: flex;
-    height: 100vh;
+    height: 100vh; /* 全画面高さ */
   }
-  .left, .right {
-    flex: 1;
+  .left {
+    width: 100px;   /* ★ 左幅100px */
+    border: none;
+  }
+  .right {
+    width: 400px;   /* ★ 右幅400px */
     border: none;
   }
 </style>
 </head>
 <body>
   <div class="container">
-    <iframe class="left" src="https://kgu-f.github.com/norikae-e/left.html"></iframe>
+    <iframe class="left" src="./left.html"></iframe>
     <iframe class="right" src="https://www.westjr.co.jp/global/en/timetable/pdf/map_kobe.pdf"></iframe>
   </div>
 </body>
